@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexafyreZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <img src="logo.png" class="loading-logo" alt="NexafyreZ">
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+            <p class="loading-text">Entering the Nexus...</p>
+        </div>
+    </div>
+
+    <!-- WebGL Background -->
+    <canvas id="webgl-bg"></canvas>
+    <video autoplay muted loop playsinline class="bg-video" id="bg-video">
+        <source src="snowy-road-under-milky-way-wallpaperwaves-com.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="logo.png" class="main-logo parallax-item" data-depth="0.08" alt="NexafyreZ">
+            <p class="parallax-item" data-depth="0.12">Next Generation Community</p>
+            <a href="https://discord.gg/PgEtBXTe6H" target="_blank" class="join-btn parallax-item" data-depth="0.18">Join Server</a>
+            <div class="scroll-down parallax-item" data-depth="0.25">Scroll Down</div>
+        </div>
+    </section>
+
+    <section class="owners-section">
+        <h2>OWNERS</h2>
+        <div class="cards-container">
+            <div class="profile-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="avatar-wrapper"><img src="pfp1.webp" alt="Elliot"></div>
+                        <h3>Elliot</h3>
+                        <div class="roles"><span>Owner</span></div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Elliot</h3>
+                        <p class="bio">Founder of NexafyreZ</p>
+                        <a href="https://www.instagram.com/_____velvet.86/?hl=en" target="_blank" class="social-btn insta-btn">Instagram</a>
+                        <a href="https://youtube.com/@nexafyrez1011?si=SKHqnM6F9D6cdmNn" target="_blank" class="social-btn youtube-btn">YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="avatar-wrapper"><img src="pfp2.webp" alt="JT"></div>
+                        <h3>JT</h3>
+                        <div class="roles"><span>Owner</span></div>
+                    </div>
+                    <div class="card-back">
+                        <h3>JT</h3>
+                        <p class="bio">Core Management Team</p>
+                        <a href="https://www.instagram.com/_.tiwana15/?hl=en" target="_blank" class="social-btn insta-btn">Instagram</a>
+                        <a href="https://youtube.com/@mrjt7?si=uXEiHCp5vH5u_gvd" target="_blank" class="social-btn youtube-btn">YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="avatar-wrapper"><img src="pfp3.webp" alt="Monkey D. Luffy"></div>
+                        <h3>Monkey D. Luffy</h3>
+                        <div class="roles"><span>Owner</span></div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Monkey D. Luffy</h3>
+                        <p class="bio">NexafyreZ Leadership</p>
+                        <a href="https://www.instagram.com/official_ayush___18/?hl=en" target="_blank" class="social-btn insta-btn">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
